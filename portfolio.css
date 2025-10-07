@@ -1,0 +1,292 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background: black; */
+  font-family: "merriweather";
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background: rgb(112, 172, 185);
+  color: white;
+}
+.left-side:hover {
+  cursor: pointer;
+}
+
+.left-side {
+  display: flex;
+  flex: 50%;
+  align-items: center;
+  gap: 5px;
+}
+.left-side h3 {
+  font-size: 20px;
+}
+.logo {
+  background: rgb(87, 97, 206);
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  font-weight: bolder;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-side {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+  /* background: red; */
+}
+
+.right-side ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+  padding: 10px 10px;
+}
+.right-side:hover {
+  cursor: pointer;
+}
+.right-side ul li a {
+  text-decoration: none;
+  color: white;
+}
+.line {
+  display: none;
+}
+
+.ebody {
+  padding: 10px 50px;
+}
+.hero-sect1 {
+  text-align: center;
+  margin: 30px 30px;
+  font-size: 35px;
+  padding: 20px 20px;
+  /* background: red; */
+}
+
+.hero-sub {
+  position: relative;
+  transition: transform 0.3s ease;
+  /* text-align: center; */
+}
+.hero-sub:hover {
+  transform: scale(1.02);
+}
+.hero-pt1 {
+  position: absolute;
+  top: 10px;
+  left: 24px;
+  margin-top: 20px;
+  width: 520px;
+}
+.hero-pt2 {
+  position: relative;
+  bottom: 50px;
+  left: 30px;
+}
+.hero-pt2 a {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+.hero-pt1 p,
+h4 {
+  color: white;
+  margin: 10px 10px;
+}
+.hero-pt1 h4 {
+  font-size: 30px;
+}
+
+.sect-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sect-2 h4 {
+  text-align: center;
+  font-size: 35px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: black;
+}
+.sect-2 p {
+  font-size: 20px;
+  margin: 0 40px;
+  padding: 10px 30px;
+}
+
+.sect-2-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+.sect-2-card div {
+  position: relative;
+  transition: transform 0.2s ease;
+}
+.sect-2-card div:hover {
+  transform: scale(1.05);
+}
+div .card-text {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  color: white;
+}
+div .card-text h4 {
+  color: white;
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+div .card-text p {
+  margin-bottom: 0;
+}
+
+.third-part {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.third-part h3 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.last-sect {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+.cardi {
+  border: 1px solid black;
+  transition: transform 0.3s ease;
+  padding: 50px 50px 30px 40px;
+}
+.cardi:hover {
+  border: 2px solid black;
+  transform: scale(1.01);
+}
+.cardi span {
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  font-weight: 200;
+  font-size: 15px;
+}
+.cardi h4 {
+  color: black;
+  margin: 40px 0 30px 0;
+  font-size: 23px;
+}
+.cardi p {
+  line-height: 2;
+  margin-bottom: 40px;
+}
+.cardi a {
+  /* background: red; */
+  font-size: 18px;
+  font-weight: 200;
+  text-decoration: none;
+  color: black;
+  /* text-align: center;
+  margin-top: auto; */
+}
+.cardi a:hover {
+  color: rgb(186, 179, 179);
+}
+.contact {
+  text-align: center;
+  padding: 100px 0;
+  line-height: 2;
+}
+.contact h5 {
+  color: black;
+  font-size: 20px;
+  margin: 0;
+}
+.contact p {
+  color: grey;
+  font-size: 15px;
+}
+.contact h3 {
+  font-size: 30px;
+  margin: 0;
+}
+.con-btn {
+  background: black;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  margin: 20px 0 0 0;
+  font-size: 16px;
+  font-weight: lighter;
+}
+.footer {
+  text-align: center;
+  padding: 100px 0;
+  line-height: 2;
+}
+.footer span {
+  font-size: 20px;
+}
+.footer span:hover {
+  cursor: pointer;
+  color: rgb(77, 76, 76);
+}
+
+@media (max-width: 600px) {
+  body {
+    width: fit-content;
+  }
+  .nav {
+    width: fit-content;
+  }
+  .right-side {
+    display: none;
+  }
+  .right-side.show {
+    display: flex;
+    flex-direction: column;
+    background: black;
+  }
+  /* .hero-pt1 {
+    position: inherit;
+  }
+  .hero-pt2 {
+    position: inherit;
+  } */
+  .line {
+    display: flex;
+    color: white;
+    font-size: 50px;
+  }
+  .hero-sect1 h1 {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  .last-sect {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+  }
+  .ebody {
+    width: fit-content;
+  }
+}
