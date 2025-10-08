@@ -44,7 +44,7 @@ nav {
   /* background: red; */
 }
 
-.right-side ul {
+.slist {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -54,7 +54,7 @@ nav {
 .right-side:hover {
   cursor: pointer;
 }
-.right-side ul li a {
+.slist li a {
   text-decoration: none;
   color: white;
 }
@@ -143,6 +143,18 @@ h4 {
 }
 .sect-2-card div:hover {
   transform: scale(1.05);
+}
+.hero-pt3 {
+  position: relative;
+  bottom: 50px;
+  left: 30px;
+}
+.hero-pt3 a {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
 }
 div .card-text {
   position: absolute;
@@ -259,12 +271,18 @@ div .card-text p {
     width: fit-content;
   }
   .right-side {
-    display: none;
-  }
-  .right-side.show {
     display: flex;
     flex-direction: column;
-    background: black;
+  }
+  .slist {
+    display: none;
+  }
+  .slist.show {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    width: 230px;
+    /* background: grey; */
   }
   /* .hero-pt1 {
     position: inherit;
@@ -274,12 +292,34 @@ div .card-text p {
   } */
   .line {
     display: flex;
+    justify-self: flex-end;
     color: white;
     font-size: 50px;
+  }
+  .hero-sub {
+    position: inherit;
   }
   .hero-sect1 h1 {
     margin: 10px 0;
     font-size: 20px;
+  }
+  .hero-pt1 p,
+  h4 {
+    color: black;
+  }
+  .hero-pt1 {
+    position: inherit;
+    padding: 20px 0;
+  }
+  .hero-pt2 a {
+    color: white;
+    background: black;
+    font-size: 20px;
+    padding: 15px 20px;
+  }
+  .hero-pt2 {
+    position: inherit;
+    padding: 10px 0;
   }
   .last-sect {
     display: flex;
@@ -288,5 +328,19 @@ div .card-text p {
   }
   .ebody {
     width: fit-content;
+  }
+  .sect-2-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .sect-2 h4 {
+    text-align: left;
+    margin: 20vh 0 0 0;
+    padding: 0;
+  }
+  .sect-2 p {
+    padding: 0;
+    margin: 30px 0;
   }
 }

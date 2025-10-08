@@ -40,17 +40,18 @@
         <div class="logo">OB</div>
         <h3>Personal Portfolio</h3>
       </div>
+
       <div class="right-side">
-        <ul>
+        <div>
+          <p class="line"><i class="fa-solid fa-bars"></i></p>
+        </div>
+        <ul class="slist">
           <li><a href="index.html">Home</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-      </div>
-      <div>
-        <p class="line"><i class="fa-solid fa-bars"></i></p>
       </div>
     </nav>
 
@@ -60,6 +61,14 @@
           <h1>Strategies that exponentially grow your online business.</h1>
         </div>
         <div class="hero-sub">
+          <div class="image-container">
+            <img src="./assets/maintool.jpg" alt="office" />
+          </div>
+          <!-- <img
+          src="https://themewagon.github.io/personal-portfolio/assets/images/hero-01.jpg"
+          class="img-fluid"
+          alt="Smartwatch image by Luke Chesser from Unsplash"
+        /> -->
           <div class="hero-pt1">
             <p>-Featured Project</p>
             <h4>Smartwatch User Interaction</h4>
@@ -69,14 +78,6 @@
               ullamcorper dui, id molestie ligula.
             </p>
           </div>
-          <div class="image-container">
-            <img src="./assets/maintool.jpg" alt="office" />
-          </div>
-          <!-- <img
-          src="https://themewagon.github.io/personal-portfolio/assets/images/hero-01.jpg"
-          class="img-fluid"
-          alt="Smartwatch image by Luke Chesser from Unsplash"
-        /> -->
           <div class="hero-pt2">
             <a href="#"
               >See case study <i class="fa-solid fa-circle-plus"></i
@@ -104,7 +105,7 @@
               <p>-Featured Project</p>
               <h4>Best Smartwatch App</h4>
             </div>
-            <div class="hero-pt2">
+            <div class="hero-pt3">
               <a href="#"
                 >See case study <i class="fa-solid fa-circle-plus"></i
               ></a>
@@ -117,7 +118,7 @@
               <p>-Featured Project</p>
               <h4>Argumented Reality</h4>
             </div>
-            <div class="hero-pt2">
+            <div class="hero-pt3">
               <a href="#"
                 >See case study <i class="fa-solid fa-circle-plus"></i
               ></a>
@@ -130,7 +131,7 @@
               <p>-Featured Project</p>
               <h4>New Music App</h4>
             </div>
-            <div class="hero-pt2">
+            <div class="hero-pt3">
               <a href="#"
                 >See case study <i class="fa-solid fa-circle-plus"></i
               ></a>
@@ -227,7 +228,7 @@
 
     <script>
       const smallSc = document.querySelector(".line");
-      const list = document.querySelector(".right-side");
+      const list = document.querySelector(".slist");
 
       smallSc.addEventListener("click", function () {
         list.classList.toggle("show");
